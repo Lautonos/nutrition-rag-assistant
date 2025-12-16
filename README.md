@@ -103,7 +103,7 @@ The conversational logic is implemented using a CrewAI agent.
 
 ### Agent Definition
 
-```python
+```
 role = "Nutrition Content Assistant"
 goal = "Answer questions about nutrition using evidence from the database"
 backstory = (
@@ -111,10 +111,11 @@ backstory = (
     "You provide clear, evidence-based explanations, avoid medical diagnoses, "
     "and ground responses in retrieved passages whenever possible."
 )
+```
 
 ### Task Configuration
 
-```python
+```
 description = (
     "Answer the following nutrition-related question using evidence from the "
     "nutrition database. Provide a clear, accurate explanation and cite the "
@@ -126,6 +127,8 @@ expected_output = (
     "uses retrieved passages as evidence, and provides a simple, "
     "actionable recommendation."
 )
+```
+
 
 ### Design Rationale
 
@@ -137,6 +140,7 @@ expected_output = (
 
 ## Project Structure
 
+```
 .
 ├── app.py                     # Streamlit chat interface
 ├── backend/
@@ -146,31 +150,31 @@ expected_output = (
 ├── config.py                  # Configuration settings
 ├── requirements.txt           # Python dependencies
 ├── README.md                  # Project documentation
+```
 
-
-##Installation and Setup
-#Prerequisites
+## Installation and Setup
+# Prerequisites
 
 -Python 3.10+
 -OpenAI API key
 
-#Setup
+# Setup
 git clone https://github.com/your-username/tonos-lpp-rag.git
 cd tonos-lpp-rag
 pip install -r requirements.txt
 
 Set your OpenAI API key: 
 
-export OPENAI_API_KEY="your_api_key_here"
+export OPENAI_API_KEY = sk-xxxx
 
 On Windows PowerShell:
 
-setx OPENAI_API_KEY "your_api_key_here"
+setx OPENAI_API_KEY = sk-xxxx
 
-##Running the Application
+## Running the Application
 streamlit run app.py
 
-##Streamlit Deployment
+## Streamlit Deployment
 The application can be deployed using Streamlit Community Cloud.
 
-Deployment link:
+Deployment link: https://nutrition-rag-assistant.streamlit.app/ 

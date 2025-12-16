@@ -159,8 +159,7 @@ expected_output = (
 -OpenAI API key
 
 # Setup
-git clone https://github.com/your-username/tonos-lpp-rag.git
-cd tonos-lpp-rag
+git clone https://github.com/your-username/tonos-lpp-rag.gitcd tonos-lpp-rag
 pip install -r requirements.txt
 
 Set your OpenAI API key: 

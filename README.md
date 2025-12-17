@@ -159,6 +159,7 @@ expected_output = (
 -OpenAI API key
 
 # Setup
+Clone the repository and install dependencies:
 git clone https://github.com/Lautonos/nutrition-rag-assistant.git
 cd nutrition-rag-assistant
 pip install -r requirements.txt
@@ -170,6 +171,8 @@ export OPENAI_API_KEY = sk-xxxx
 On Windows PowerShell:
 
 setx OPENAI_API_KEY = sk-xxxx
+
+Restart your terminal after setting the variable to ensure it is available.
 
 ## Running the Application
 streamlit run app.py
